@@ -6,8 +6,11 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
-		"lint": "eslint .",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"format": "biome format ./src",
+		"format-fix": "biome format --write ./src",
+		"lint": "biome lint ./src",
+		"lint-fix": "biome lint --write ./src"
 	},
 	"dependencies": {
 		"@headlessui/react": "^2.2.4",
