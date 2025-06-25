@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+	@apply h-full w-full;
+}
+
+#root .main-background {
+	@apply fixed top-0 left-0 w-full h-full overflow-hidden z-0 bg-slate-100 dark:bg-stone-700;
+}
+
+#root .main-container {
+	@apply relative z-10 h-full w-full;
+}
